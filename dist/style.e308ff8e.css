@@ -1,0 +1,175 @@
+/* 全局默认样式 */
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/****/
+
+body {
+  background-image: url("/background02.cbae00c2.jpg");
+  background-repeat: repeat;
+  background-size: 100vw 100vh;
+  -moz-background-size: 100vw 100vh;
+}
+@media (min-width: 500px) {
+  body {
+    background-image: url("/background01.9c1fb9de.jpg");
+    background-repeat: repeat;
+    background-size: 100vw 100vh;
+    -moz-background-size: 100vw 100vh;
+  }
+}
+.globalHeader {
+  margin: 20px;
+}
+@media (min-width: 500px) {
+  .globalHeader {
+    margin: 60px 0 100px;
+  }
+}
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .searchForm {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.searchForm > input {
+  width: 100%;
+  height: 40px;
+  margin-right: 10px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.searchForm > button {
+  white-space: nowrap;
+
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.searchForm > button:hover {
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+.searchForm > button:active {
+  position: relative;
+  top: 1px;
+}
+
+.globalMain {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.siteList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+@media (min-width: 500px) {
+  .siteList {
+    justify-content: flex-start;
+    /* 平均布局 */
+    margin-left: 0;
+    margin-right: -25px;
+  }
+}
+.siteList > li {
+  margin-bottom: 10px;
+}
+@media (min-width: 500px) {
+  .siteList > li {
+    margin-right: 25px;
+  }
+}
+.siteList .site,
+.siteList > .last {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.siteList .site > .logo,
+.siteList .last > .icon-wrapper {
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siteList .site > .link,
+.siteList .last > .text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+@media (min-width: 500px) {
+  .siteList .site:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  }
+  .siteList > .last:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.siteList .site > .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: default;
+}
+@media (min-width: 500px) {
+  .siteList .site > .close {
+    display: none;
+  }
+  .siteList .site:hover > .close {
+    display: block;
+  }
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
